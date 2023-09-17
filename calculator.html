@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    li {
+      float: left;
+    }
+    .nav-a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    li .nav-a {
+      display: block;
+      padding: 8px;
+      background-color: #dddddd;
+    }
+    .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.flex-container{
+    display: flex;
+    background-color: white;
+    width: 405px;
+}
+.flex-container > div{
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    background-color: #f2f2f2;
+}
+.calculator .form-input{
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.form-input{
+    margin-top: 15px;
+    width: 30%;
+}
+</style>
+<body>
+    <div class="container">
+    <div class="nav">
+        <ul>
+            <li><a href="home.html" class="nav-a">Home</a></li>
+            <li><a href="table.html" class="nav-a">Table</a></li>
+            <li><a href="form.html" class="nav-a">Form</a></li>
+            <li><a href="calculator.html" class="nav-a">Calculatr</a></li>
+            <li><a href="profile.html" class="nav-a">Profile</a></li>
+        </ul>
+        <div class="calculator">
+            <form action="">
+                <input type="text" name="" id="" class="form-input">
+            </form>
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>*</div>
+            </div>
+            <div class="flex-container">
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>/</div>
+            </div>
+            <div class="flex-container">
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>-</div>
+            </div>
+            <div class="flex-container">
+                <div>.</div>
+                <div>0</div>
+                <div>+</div>
+                <div>=</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

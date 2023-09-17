@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .nav-a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    li {
+      float: left;
+    }
+    
+    li .nav-a {
+      display: block;
+      padding: 8px;
+      background-color: #dddddd;
+    } 
+* {
+  box-sizing: border-box;
+}
+
+.form-input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="nav">
+        <ul>
+            <li><a href="home.html" class="nav-a">Home</a></li>
+            <li><a href="table.html" class="nav-a">Table</a></li>
+            <li><a href="form.html" class="nav-a">Form</a></li>
+            <li><a href="calculator.html" class="nav-a">Calculatr</a></li>
+            <li><a href="profile.html" class="nav-a">Profile</a></li>
+        </ul>
+    </div>
+    <form action="" class="form-group">
+        <label for="">Name</label>
+        <input type="text" name="" id="" class="form-input" required><br>
+        <label for="">Gender</label>
+        <select name="" id="" class="form-input">
+            <option value="">Select your Gender</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Other</option>
+        </select><br>
+        <label for="">Email</label>
+        <input type="email" name="" id="" class="form-input" required><br>
+        <label for="">Message</label>
+        <textarea name="" id="" cols="auto" rows="auto" required></textarea><br>
+        <button type="submit" class="button">Submit</button>
+    </form>
+</div>
+</body>
+</html>
